@@ -3,6 +3,7 @@ import getCreditCard from '../src/controllers/getCreditCard.controller.js';
 import storeCreditCard from '../src/controllers/storeCreditCard.controller.js';
 import { connect, close} from '../src/database/conn.database.js';
 chai.expect();
+chai.should();
 describe('get credit card details', () => {
     before(async () => await connect());
     after(async () => await close());
